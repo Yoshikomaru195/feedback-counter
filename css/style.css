@@ -1,0 +1,147 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #FFE4C4;
+}
+
+.button {
+  display: block;
+  width: 400px;
+  height: 100px;
+  font-weight: 700;
+  outline: none;
+  font-size: 25px;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+  border-width: 2px 0;
+  border-style: solid none;
+  border-radius: 6px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.container {
+  margin: auto;
+  max-width: 1600px;
+}
+
+.block-thx {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.vote-button {
+  margin-top: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  justify-items: center;
+}
+
+.vote-button__item {
+  max-width: 400px;
+}
+
+.vote-button__good {
+  background: #40c781;
+  -webkit-box-shadow: 0 -3px #35a76e inset;
+          box-shadow: 0 -3px #35a76e inset;
+}
+
+.vote-button__good:hover {
+  background: #35a76e;
+}
+
+.vote-button__medium {
+  color: black;
+  background: #e9ebdf;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.vote-button__medium:hover {
+  background: #fffffe;
+}
+
+.vote-button__bad {
+  border: 2px solid #F64C2B;
+  background: #F45A38;
+}
+
+.vote-button__bad:hover {
+  background: #ec350d;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 900px;
+  }
+  .button {
+    max-width: 400px;
+  }
+  .vote-button {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .vote-button__item {
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  .vote-button__item:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 736px) {
+  .vote-button {
+    margin-top: 150px;
+  }
+}
+
+@media (max-width: 568px) {
+  .container {
+    max-width: 90%;
+  }
+  .button {
+    width: 100%;
+  }
+  .vote-button {
+    margin-top: 100px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .vote-button__item {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .vote-button {
+    margin-top: 50px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
